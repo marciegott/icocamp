@@ -32,13 +32,11 @@ console.assert(
 );
 ```
 
-> Spoiler
-> **Instruções passo a passo para resolver:**
->
+<details>
+  <summary>🫣 Spoiler</summary>
+
 > 1.  Dentro da função de _callback_, declare uma variável `palavraRevertida`.
 > 2.  Use o encadeamento de métodos: `const palavraRevertida = palavra.split('').reverse().join('');`
 > 3.  A função de _callback_ deve retornar a comparação: `return palavra === palavraRevertida;`
 
----
-
-Qual exercício você quer resolver primeiro: **Exercício 16 (Formatação de Telefone)** ou **Exercício 17 (Filtrando Palíndromos)**? 💻
+</details>
