@@ -4,7 +4,14 @@
 
 ## 📝 Functions
 
-- [ ] [Callback Functions](./functions/callback-function.md)
+### Callback Function
+
+- [ ] [1. Callback Functions](./functions/callback-function/01-callback-function.md) ([solução](./solutions/functions/callback-function/01-callback-function.js))
+
+### High Order Function
+
+- [ ] [1. Validador de Idade](./functions/high-order-function/01-validador-idade.md) ([solução](./solutions/functions/high-order-function/01-validador-idade.js))
+- [ ] [2. Memoization (Cache)](./functions/high-order-function/02-memoization.md) ([solução](./solutions/functions/high-order-function/02-memoization.js))
 
 ## 🔄 Iterators
 
@@ -34,4 +41,7 @@
 
 ## 🏆 Desafios
 
+### Carrinho de Compras
+
+- [ ] [1. Carrinho de compras](./desafios/carrinho-compras/01-carrinho-compras.md) ([solução](./solutions/desafios/carrinho-compras/01-carrinho-compras.js))
 - [ ] [1. Carrinho de compras](./desafios/1.carrinho-compras.md) ([solução](./desafios/1.carrinho-compras.js))
