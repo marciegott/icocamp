@@ -100,3 +100,10 @@
 |  #  | Status | Dificuldade | Exercício                                                                 |                                   Solução                                   |
 | :-: | :----: | :---------: | :------------------------------------------------------------------------ | :-------------------------------------------------------------------------: |
 |  1  |  [ ]   |     🟡      | [Carrinho de compras](./desafios/carrinho-compras/01-carrinho-compras.md) | [Ver Solução](./solutions/desafios/carrinho-compras/01-carrinho-compras.js) |
+
+### Lista de Projetos
+
+|  #  | Status | Dificuldade | Exercício | Solução |
+| :-: | :----: | :---------: | :-------- | :-----: |
+|  1  |  [ ]   |     🟡      | [Lista de Projetos](./desafios/lista-de-projetos/01-lista-de-projetos.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/01-lista-de-projetos.js) |
+|  2  |  [ ]   |     🟡      | [Lista de Arquivos por Projeto](./desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.js) |
