@@ -103,7 +103,7 @@
 
 ### Lista de Projetos
 
-|  #  | Status | Dificuldade | Exercício | Solução |
-| :-: | :----: | :---------: | :-------- | :-----: |
-|  1  |  [ ]   |     🟡      | [Lista de Projetos](./desafios/lista-de-projetos/01-lista-de-projetos.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/01-lista-de-projetos.js) |
+|  #  | Status | Dificuldade | Exercício                                                                                         |                                          Solução                                          |
+| :-: | :----: | :---------: | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------: |
+|  1  |  [ ]   |     🟡      | [Lista de Projetos](./desafios/lista-de-projetos/01-lista-de-projetos.md)                         |       [Ver Solução](./solutions/desafios/lista-de-projetos/01-lista-de-projetos.js)       |
 |  2  |  [ ]   |     🟡      | [Lista de Arquivos por Projeto](./desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.js) |
