@@ -4,6 +4,8 @@ In the world of software development, **Seeding** is a crucial step for setting 
 
 ## What is Data Seeding?
 
+<img src="/docs/images/data-seeding.png" width="200px">
+
 **Seeding** is the process of providing an initial set of data to a program or a database. Think of it like "planting seeds" in a garden so that there is something to look at and work with as soon as the application starts.
 
 Without seeding, a developer would have to manually input data through the user interface every single time they refresh their browser or restart their server.

@@ -1,6 +1,6 @@
 # Ico Camp
 
-<img src="/docs/cover.png" width="200px">
+<img src="/docs/images/cover.png" width="200px">
 
 ## Content
 
