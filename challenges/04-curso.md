@@ -48,6 +48,8 @@ Create an object `myBootcamp`. It should have:
 
 Use your `addTopic` method to add the following curriculum:
 
+🐈 Hint: [We can use data seeding to prepare the data for the program](../docs/seeding.md)
+
 | Topic Name                  | Difficulty   |
 | --------------------------- | ------------ |
 | Welcome to Learn JavaScript | Beginner     |

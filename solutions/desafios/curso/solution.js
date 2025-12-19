@@ -1,42 +1,49 @@
 /**
- * Challenge: Course Progress Tracker (Solution)
- * This object demonstrates CRUD operations and dynamic data calculation.
+ * Challenge: Course Progress Tracker (Final Solution)
+ * Features: Factory Functions, CRUD operations, and Getters.
  */
 
+// 1. THE FACTORY FUNCTION
+// Standardizes the creation of topic objects
+const topicFactory = (title, difficulty) => {
+  return {
+    title, // ES6 Shorthand for title: title
+    difficulty, // ES6 Shorthand for difficulty: difficulty
+    isCompleted: false,
+  };
+};
+
+// 2. THE BOOTCAMP OBJECT
 const myBootcamp = {
   name: "PrincessCamp",
   topics: [],
 
-  // [CREATE] Adds a new topic object to the array
-  addTopic(topicTitle) {
-    // We push an object so we can track the title and status together
-    this.topics.push({
-      title: topicTitle,
-      isCompleted: false,
-    });
+  // [CREATE]
+  addTopic(title, difficulty) {
+    const newTopic = topicFactory(title, difficulty);
+    this.topics.push(newTopic);
   },
 
-  // [READ] Iterates and prints the list in a specific format
+  // [READ]
   listAll() {
+    console.log(`--- ${this.name} Curriculum ---`);
     this.topics.forEach((topic) => {
-      // Use a ternary operator to decide which symbol to show
       const status = topic.isCompleted ? "x" : " ";
-      console.log(`- [${status}] ${topic.title}`);
+      console.log(`- [${status}] ${topic.title} (${topic.difficulty})`);
     });
   },
 
-  // [UPDATE] Finds a topic and sets status to true
+  // [UPDATE]
   markAsComplete(topicTitle) {
-    // .find() returns the ACTUAL object from the array (by reference)
     const topic = this.topics.find((t) => t.title === topicTitle);
     if (topic) {
       topic.isCompleted = true;
     } else {
-      console.error(`Topic "${topicTitle}" not found.`);
+      console.log(`Error: "${topicTitle}" not found.`);
     }
   },
 
-  // [UPDATE] Finds a topic and sets status to false
+  // [UPDATE]
   markAsIncomplete(topicTitle) {
     const topic = this.topics.find((t) => t.title === topicTitle);
     if (topic) {
@@ -44,58 +51,56 @@ const myBootcamp = {
     }
   },
 
-  // [DELETE] Filters the array to exclude the specific topic
+  // [DELETE]
   removeTopic(topicTitle) {
-    // We overwrite the array with a new version that doesn't have the title
+    // Re-assign the array to everything EXCEPT the matching title
     this.topics = this.topics.filter((t) => t.title !== topicTitle);
   },
 
-  // [GETTER] Calculates completion percentage dynamically
+  // [GETTER]
   get percentageComplete() {
-    // Avoid division by zero if the array is empty
-    if (this.topics.length === 0) {
-      return "0% complete";
-    }
+    const total = this.topics.length;
+    if (total === 0) return "0% complete";
 
-    // Filter creates a temporary array of only finished items, then we get its length
-    const completedCount = this.topics.filter((t) => t.isCompleted).length;
-    const totalCount = this.topics.length;
-
-    // Formula: (Part / Total) * 100
-    const percentage = (completedCount / totalCount) * 100;
+    // Use .filter() to find the length of finished tasks
+    const completed = this.topics.filter((t) => t.isCompleted).length;
+    const percentage = (completed / total) * 100;
 
     return `${Math.round(percentage)}% complete`;
   },
 };
 
-// --- EXECUTION & TESTING ---
+// --- 3. POPULATING DATA ---
 
-// 1. Populate
-const coreTopics = [
-  "Welcome to Learn JavaScript",
-  "Introduction",
-  "Conditionals",
-  "Functions",
-  "Scope",
-  "Arrays",
-  "Loops",
-  "Iterators",
-  "Objects",
-  "Next Steps",
+const curriculum = [
+  ["Welcome to Learn JavaScript", "Beginner"],
+  ["Introduction", "Beginner"],
+  ["Conditionals", "Intermediate"],
+  ["Functions", "Intermediate"],
+  ["Scope", "Advanced"],
+  ["Arrays", "Intermediate"],
+  ["Loops", "Intermediate"],
+  ["Iterators", "Advanced"],
+  ["Objects", "Advanced"],
+  ["Next Steps", "Beginner"],
 ];
-coreTopics.forEach((topic) => myBootcamp.addTopic(topic));
 
-// 2. Update status
+// Loop through the data to add it to our object
+curriculum.forEach((item) => myBootcamp.addTopic(item[0], item[1]));
+
+// --- 4. TESTING ---
+
+// Mark some as complete
 myBootcamp.markAsComplete("Welcome to Learn JavaScript");
 myBootcamp.markAsComplete("Introduction");
 myBootcamp.markAsComplete("Conditionals");
 myBootcamp.markAsComplete("Functions");
 
-// 3. Delete a topic to test CRUD
+// Remove "Next Steps" to test delete functionality
 myBootcamp.removeTopic("Next Steps");
 
-// 4. Output results
-console.log(`--- Welcome to ${myBootcamp.name} ---`);
+// Final Printout
 myBootcamp.listAll();
-console.log("----------------------------");
-console.log(`Progress: ${myBootcamp.percentageComplete}`);
+console.log("\n--- Statistics ---");
+console.log(myBootcamp.percentageComplete);
+// Since 4 out of 9 are done, it should show: 44% complete
