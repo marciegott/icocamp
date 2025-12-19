@@ -43,6 +43,7 @@
 | 18  |  [ ]   |     🟡      | [Estoque de Loja](./objects/desafios-reais/03-estoque-loja.md)           |   [Ver Solução](./solutions/objects/desafios-reais/03-estoque-loja.js)    |
 | 19  |  [ ]   |     🟡      | [Média do Aluno](./objects/desafios-reais/04-media-aluno.md)             |    [Ver Solução](./solutions/objects/desafios-reais/04-media-aluno.js)    |
 | 20  |  [ ]   |     🟡      | [Relatório de Usuário](./objects/desafios-reais/05-relatorio-usuario.md) | [Ver Solução](./solutions/objects/desafios-reais/05-relatorio-usuario.js) |
+| 21  |  [ ]   |     🔴      | [Banking System](./objects/desafios-reais/06-banking-system.md)          |  [Ver Solução](./solutions/objects/desafios-reais/06-banking-system.js)   |
 
 ## 📝 Functions
 
@@ -58,6 +59,12 @@
 | :-: | :----: | :---------: | :-------------------------------------------------------------------------- | :----------------------------------------------------------------------------: |
 |  1  |  [ ]   |     🟡      | [Validador de Idade](./functions/high-order-function/01-validador-idade.md) | [Ver Solução](./solutions/functions/high-order-function/01-validador-idade.js) |
 |  2  |  [ ]   |     🔴      | [Memoization (Cache)](./functions/high-order-function/02-memoization.md)    |   [Ver Solução](./solutions/functions/high-order-function/02-memoization.js)   |
+
+### Recursion
+
+|  #  | Status | Dificuldade | Exercício                                          |                            Solução                             |
+| :-: | :----: | :---------: | :------------------------------------------------- | :------------------------------------------------------------: |
+|  1  |  [ ]   |     🟢      | [Factorial](./functions/recursion/01-factorial.md) | [Ver Solução](./solutions/functions/recursion/01-factorial.js) |
 
 ## 🔄 Iterators
 
@@ -84,6 +91,7 @@
 |  1  |  [ ]   |     🟢      | [Total do Carrinho](./iterators/reduce/01-total-carrinho.md) | [Ver Solução](./solutions/iterators/reduce/01-total-carrinho.js) |
 |  2  |  [ ]   |     🟢      | [Frase Completa](./iterators/reduce/02-frase-completa.md)    | [Ver Solução](./solutions/iterators/reduce/02-frase-completa.js) |
 |  3  |  [ ]   |     🟢      | [Maior Nota](./iterators/reduce/03-maior-nota.md)            |   [Ver Solução](./solutions/iterators/reduce/03-maior-nota.js)   |
+|  4  |  [ ]   |     🟢      | [Longest Word](./iterators/reduce/04-longest-word.md)        |  [Ver Solução](./solutions/iterators/reduce/04-longest-word.js)  |
 
 ### ForEach
 
@@ -93,17 +101,11 @@
 |  2  |  [ ]   |     🟢      | [Calculando Saldo](./iterators/forEach/02-calculando-saldo.md) | [Ver Solução](./solutions/iterators/forEach/02-calculando-saldo.js) |
 |  3  |  [ ]   |     🟢      | [Lista de Compras](./iterators/forEach/03-lista-compras.md)    |  [Ver Solução](./solutions/iterators/forEach/03-lista-compras.js)   |
 
-## 🏆 Desafios
+## 🏆 Challenges
 
-### Carrinho de Compras
-
-|  #  | Status | Dificuldade | Exercício                                                                 |                                   Solução                                   |
-| :-: | :----: | :---------: | :------------------------------------------------------------------------ | :-------------------------------------------------------------------------: |
-|  1  |  [ ]   |     🟡      | [Carrinho de compras](./desafios/carrinho-compras/01-carrinho-compras.md) | [Ver Solução](./solutions/desafios/carrinho-compras/01-carrinho-compras.js) |
-
-### Lista de Projetos
-
-|  #  | Status | Dificuldade | Exercício                                                                                         |                                          Solução                                          |
-| :-: | :----: | :---------: | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------: |
-|  1  |  [ ]   |     🟡      | [Lista de Projetos](./desafios/lista-de-projetos/01-lista-de-projetos.md)                         |       [Ver Solução](./solutions/desafios/lista-de-projetos/01-lista-de-projetos.js)       |
-|  2  |  [ ]   |     🟡      | [Lista de Arquivos por Projeto](./desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.js) |
+|  #  | Status | Dificuldade | Exercício                                                                           |                                          Solução                                          |
+| :-: | :----: | :---------: | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------: |
+|  1  |  [ ]   |     🟡      | [Carrinho de compras](./challenges/01-carrinho-compras.md)                          |        [Ver Solução](./solutions/desafios/carrinho-compras/01-carrinho-compras.js)        |
+|  2  |  [ ]   |     🟡      | [Lista de Projetos](./challenges/02-lista-de-projetos.md)                           |       [Ver Solução](./solutions/desafios/lista-de-projetos/01-lista-de-projetos.js)       |
+|  3  |  [ ]   |     🟡      | [Lista de Arquivos por Projeto](./challenges/02.1-lista-de-arquivos-por-projeto.md) | [Ver Solução](./solutions/desafios/lista-de-projetos/02-lista-de-arquivos-por-projeto.js) |
+|  4  |  [ ]   |     🟡      | [Course Progress Tracker](./challenges/04-curso.md)                                 |                   [Ver Solução](./solutions/desafios/curso/solution.js)                   |
