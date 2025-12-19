@@ -26,14 +26,17 @@ Create an object `myBootcamp`. It should have:
 
 ### 2. The Methods
 
-**Crete the following methods**
+Your object should handle the full lifecycle of a topic (CRUD: Create, Read, Update, Delete).
 
-- **`addTopic(topicTitle)`**: Adds a new topic to the `topics` array and sets `isCompleted` to `false`.
-- **`markAsComplete(topicTitle)`**: Finds the topic by title and sets `isCompleted` to `true`.
-- **`markAsIncomplete(topicTitle)`**: Finds the topic by title and sets `isCompleted` to `false`.
-- **`listAll()`**: Prints to the console the list of topics in the format:
-  - `- [x] Topic Name`, when complete.
-  - `- [ ] Topic Name`, when incomplete.
+- **`addTopic(topicTitle)`**: **[CREATE]** Adds a new topic object to the `topics` array. Each object should have the `title` provided and `isCompleted` set to `false` by default.
+- **`listAll()`**: **[READ]** Iterates through the `topics` array and prints each one to the console using the following format:
+
+  - `- [x] Topic Name` (if `isCompleted` is `true`)
+  - `- [ ] Topic Name` (if `isCompleted` is `false`)
+
+- **`markAsComplete(topicTitle)`**: **[UPDATE]** Finds the topic in the array by its title and updates `isCompleted` to `true`.
+- **`markAsIncomplete(topicTitle)`**: **[UPDATE]** Finds the topic in the array by its title and updates `isCompleted` to `false`.
+- **`removeTopic(topicTitle)`**: **[DELETE]** Removes the topic with the matching title from the `topics` array.
 
 **Populate the topics you're studying**
 
@@ -80,6 +83,31 @@ Inside your getter, remember to return a string if you want it to be user-friend
 
 ```javascript
 return `${Math.round(percentage)}% complete`;
+```
+
+#### Adding (Create)
+
+Remember that `topics` is an array of **objects**, not just strings. You need to push a new object:
+
+```javascript
+this.topics.push({ title: topicTitle, isCompleted: false });
+```
+
+#### Listing (Read)
+
+Use a template literal and a ternary operator inside a loop to determine if you should print `[x]` or `[ ]`:
+
+```javascript
+const checkbox = topic.isCompleted ? "x" : " ";
+console.log(`- [${checkbox}] ${topic.title}`);
+```
+
+#### Removing (Delete)
+
+The most common way to "delete" in JS is to use `.filter()`. You essentially redefine the array to exclude the item you don't want:
+
+```javascript
+this.topics = this.topics.filter((t) => t.title !== topicTitle);
 ```
 
 </details>
