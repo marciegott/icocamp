@@ -4,6 +4,7 @@
 
 ## Content
 
+- [Data Modeling with JavaScript — Mini Curso](./docs/modelagem-de-dados/00-summary.md)
 - [Getters/Setters](./docs/getters-setters.md)
 - [Data Seeding](./docs/seeding.md)
 
