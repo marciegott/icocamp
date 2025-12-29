@@ -35,3 +35,6 @@ Muito dos tópicos vão se basear no projeto [Roadmap FullStack](https://roadmap
     - Arquivos estáticos
 - Deploy usando Netlify ou outro provedor
 - Backend ...
+- API
+- SDK
+- Glossario de termos para ajudar na busca de informação
