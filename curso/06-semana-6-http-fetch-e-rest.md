@@ -116,8 +116,9 @@ Nesta semana, você irá criar uma **página de busca de livros** que consome da
 - Utilizar a **Open Library Search API** para buscar livros por autora  
   - URL base:  
     `https://openlibrary.org/search.json`
-  - O valor digitado no **campo de busca** deve ser usado como parâmetro `author`
-  - Exemplo: `https://openlibrary.org/search.json?author=emily+henry`
+  - O valor digitado no **campo de busca** deve ser usado como parâmetro `q`, permitindo assim que se busque por um título de livro ou nome de autor.
+    - Exemplo: `https://openlibrary.org/search.json?q="emily henry"`
+    - Exemplo: `https://openlibrary.org/search.json?q="gone girl"`
 
 - Criar uma nova página chamada **`busca.html`**
   - Acessível a partir da Home da aplicação
