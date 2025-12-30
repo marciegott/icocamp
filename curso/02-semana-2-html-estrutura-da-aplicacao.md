@@ -1,0 +1,9 @@
+04-semana-4-javascript-dom-e-localstorage.md
+05-semana-5-git-e-github.md
+06-semana-6-http-fetch-e-rest.md
+07-semana-7-backend-api-e-servidor.md
+08-semana-8-integracao-frontend-backend.md
+09-semana-9-modelagem-de-dados-e-sql.md
+10-semana-10-oop-e-organizacao-de-codigo.md
+11-semana-11-deploy-e-publicacao.md
+12-semana-12-finalizacao-e-documentacao.md
