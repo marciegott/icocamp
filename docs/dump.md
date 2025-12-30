@@ -34,5 +34,9 @@ Muito dos tópicos vão se basear no projeto [Roadmap FullStack](https://roadmap
 - API
 - SDK
 - Glossario de termos para ajudar na busca de informação
-- CSS Patterns
-- CSS box-sizing: border-box tip
+- CSS
+  - Patterns
+  - box-sizing: border-box tip
+- JS:
+  - document.addEventListener("domcontentloaded")
+  - varios arquivos js com as funcoes quebradinhas
