@@ -1,8 +1,8 @@
 # 📚 Bootcamp Marcie — Semana 1  
+
 ## JavaScript 1: dados, lógica e leitura de código
 
 Projeto em evolução: **Minha Estante Virtual**
-
 
 ## 🎯 Objetivo da semana
 
@@ -20,15 +20,14 @@ Ao final desta semana, a aluna será capaz de:
 > Nesta semana, **não há HTML nem CSS**.  
 > O foco é **pensar como programadora**.
 
-
 ## 🧠 Conceito central da semana
 
 > Programar é **transformar dados de entrada em dados de saída**.
 
 Antes de telas, formulários ou backend, precisamos aprender a:
+
 - organizar informações
 - responder perguntas sobre esses dados
-
 
 ## 🧩 Domínio do problema: Minha Estante Virtual
 
@@ -69,7 +68,6 @@ const books = [
 ];
 ```
 
-
 ## 📘 Conteúdos da semana (com intenção pedagógica)
 
 ### 1️⃣ Arrays e objetos (revisão aplicada)
@@ -78,13 +76,14 @@ const books = [
 - Objeto → uma coisa com propriedades  
 
 Exemplo mental:
+
 - **Array** = prateleira  
 - **Objeto** = livro  
-
 
 ### 2️⃣ Funções como “máquinas”
 
 Função:
+
 - recebe dados
 - processa
 - devolve um resultado
@@ -97,30 +96,30 @@ function isRead(book) {
 
 > Uma função **não deve imprimir**, ela deve **retornar**.
 
-
 ### 3️⃣ `.filter()` — selecionar livros
 
 Usado quando queremos:
+
 - pegar **parte** da estante
 
 ```js
 const readBooks = books.filter(book => book.read === true);
 ```
 
-
 ### 4️⃣ `.map()` — transformar dados
 
 Usado quando queremos:
+
 - mudar o formato da informação
 
 ```js
 const bookTitles = books.map(book => book.title);
 ```
 
-
 ### 5️⃣ `.reduce()` — resumir a estante
 
 Usado quando queremos:
+
 - transformar muitos valores em **um só**
 
 ```js
@@ -128,7 +127,6 @@ const totalPages = books.reduce((total, book) => {
   return total + book.pages;
 }, 0);
 ```
-
 
 ## 🧪 Exercícios guiados (obrigatórios)
 
@@ -147,30 +145,29 @@ function getTotalBooks(books) {
 
 </details>
 
-
 ### Exercício 2 — Livros lidos e não lidos
 
 Criar funções que retornam:
+
 - quantidade de livros lidos
 - quantidade de livros não lidos
 
 💡 Usar `.filter()` ou `.reduce()`.
 
-
 ### Exercício 3 — Total de páginas
 
 Criar uma função que retorna:
+
 - total de páginas da estante
 
 Obrigatório usar `.reduce()`.
 
-
 ### Exercício 4 — Total de páginas lidas
 
 Criar uma função que:
+
 - considera apenas livros lidos
 - soma o total de páginas lidas
-
 
 ## 🏁 Desafio da semana (entrega principal)
 
@@ -195,7 +192,6 @@ Total de páginas: 1240
 Total de páginas lidas: 820
 ```
 
-
 ## ✅ Critérios de conclusão da semana
 
 A semana só é considerada concluída se a aluna consegue:
@@ -206,7 +202,6 @@ A semana só é considerada concluída se a aluna consegue:
 - [ ] Ler uma função e explicar o que ela faz
 - [ ] Alterar o array de livros sem quebrar o código
 
-
 ## 📎 Material de apoio
 
 - MDN — Array.prototype.reduce  
@@ -214,10 +209,10 @@ A semana só é considerada concluída se a aluna consegue:
 - Codecademy — JavaScript Functions  
 - DevDocs — JavaScript Array Methods  
 
-
 ## 🔍 Observação pedagógica
 
 Nesta semana:
+
 - errar é esperado
 - decorar sintaxe **não é objetivo**
 - entender o *porquê* de cada função é o foco
