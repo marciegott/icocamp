@@ -22,7 +22,7 @@ Muito dos tópicos vão se basear no projeto [Roadmap FullStack](https://roadmap
 - JSON
 - LocalStorage
 - Fetch API
-  - HTTP methods e REST
+  - [HTTP methods e REST](https://www.codecademy.com/learn/learn-javascript-requests)
 - [Async e Promises](https://www.youtube.com/watch?v=ZYb_ZU8LNxs)
 - npm
 - [OOP](https://www.youtube.com/watch?v=PFmuCDHHpwk)
