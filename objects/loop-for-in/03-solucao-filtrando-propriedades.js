@@ -9,9 +9,9 @@ const notas = {
 // Soma maiores que 7
 let somaAprovadas = 0;
 
-for (let key in notas) {
-    if (notas[key] > 7) {
-        somaAprovadas += notas[key];
+for (let materia in notas) {
+    if (notas[materia] > 7) {
+        somaAprovadas += notas[materia];
     }
 }
 
