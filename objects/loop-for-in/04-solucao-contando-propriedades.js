@@ -8,9 +8,9 @@ const carro = {
     ano: 2020
 }
 
-function contarPropriedades(carro) {
+function contarPropriedades(objeto) {
     let contador = 0;
-    for (let keys in carro) {
+    for (let key in objeto) {
         contador++;
     }
     return contador;
